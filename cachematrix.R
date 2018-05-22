@@ -48,7 +48,7 @@ cacheSolve<-function (x,...){
     return (inv1)
   }
   #if inv1 is not empty, then that means the inverse of this matrix has already been calculated
-  #a message saying "getting cached dat" will be returned and the cached value is returned
+  #a message saying "getting cached data" will be returned and the cached value is returned
   data<-x$get()
   #else, the new matrix is retrieved using the get function and will be assigned to data
   inv1<-solve(data,...)
