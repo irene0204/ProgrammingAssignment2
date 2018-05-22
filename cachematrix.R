@@ -16,15 +16,15 @@ makeCacheMatrix<-function (x=matrix()){
   }
   #the set function does 2 things:
   #First, takes in an argument y, and assign it to x, which is in the parent environment (<<- is used)
-  #in this assignment y will be a new matrix to be calculate. By doing this, x will be set to be the 
+  #in this assignment y will be a new matrix to be calculated. By doing this, x will be set to be the 
   #new matrix throughout the function 
-  #Second,when the user use the set function to set the new matrix to be calculated, inv is set to be
+  #Second, when the user use the set function to set the new matrix to be calculated, inv is set to be
   #empty (NULL)
   get<-function ()x
   #the get function simply returns the matrix 
   setinv<-function (inverse) inv<<-inverse 
   #the setinv function takes in an argument "inverse" and assign it to inv, which is in the parent 
-  #environment. In this assigment the argument will be the inverse value, which will be calculated with
+  #environment. In this assigment the argument will be the inverse of the matrix, which will be calculated with
   #the cacheSolve function. This way the inverse of the matrix is "saved" in the varaible "inv" and can 
   #be retrieved later
   getinv<-function() inv
